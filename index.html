@@ -60,7 +60,7 @@
                     </ul>
                 </div>
                 <div class="sobre-imagem">
-                    <img src="img/img1.jpg" alt="[Nome da Fonoaudióloga]" />
+                    <img src="img/img1.jpg" alt="Renata" />
                 </div>
             </div>
         </section>
@@ -83,10 +83,11 @@
                             aprendizagem e outros distúrbios da comunicação.
                         </p>
                     </div>
-                    </div>
+                </div>
             </div>
         </section>
 
+<!--
         <section class="contato" id="contato">
             <div class="contato-conteudo">
                 <h2>Contato</h2>
@@ -106,15 +107,46 @@
                 </form>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <p>
-            &copy; 2024 Leonardo Barbosa. Todos os direitos reservados.
-        </p>
-    </footer>
+-->
 
-    <script src="js/script.js"></script>
+        <section class="contato" id="contato">
+            <div class="contato-conteudo">
+
+
+                <form class="contato-formulario">
+                    <h2>Agende sua Consulta</h2>
+                    <form action="seu-backend-ou-email.php" method="post">
+                      <label for="nome">Nome completo:</label>
+                      <input type="text" id="nome" name="nome" required>
+
+                      <label for="email">E-mail:</label>
+                      <input type="email" id="email" name="email" required>
+
+                      <label for="telefone">Telefone:</label>
+                      <input type="tel" id="telefone" name="telefone" required>
+
+                      <label for="data">Data da consulta:</label>
+                      <input type="date" id="data" name="data" required>
+
+                      <label for="mensagem">Mensagem (opcional):</label>
+                      <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                      <button type="submit">Agendar</button>
+                  </form>
+              </form>
+          </div>
+      </section>
+
+  </main>
+
+  <footer>
+    <p>
+        &copy; 2024 Leonardo Barbosa. Todos os direitos reservados.
+    </p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 
 </html>
