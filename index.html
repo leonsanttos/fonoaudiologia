@@ -1,48 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fono</title>
+    <title>Fonoaudióloga [Nome]</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link href="img/LOGO.png" rel="icon">
     <link href="img/LOGO.png" rel="apple-touch-icon">
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <img src="img/LOGO.png" id="logo" alt="Logo">
         <button id="abrirMenu">&#9776;</button>
         <nav id="menu">
             <button id="fecharMenu">X</button>
-            <a href="#inicio">Ínicio</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#serviços">Serviços</a>
+            <a href="#inicio">Início</a>
             <a href="#sobre">Sobre</a>
+            <a href="#serviços">Serviços</a>
             <a href="#contato">Contato</a>
         </nav>
     </header>
 
-    <section class="inicio" id="inicio">
-        <!-- conteúdo mantido -->
-         <p>ola section</p>
-    </section>
-
     <main>
-        <!-- conteúdo mantido -->
-        <p>ola section</p>
+        <section class="inicio" id="inicio">
+            <div class="inicio-conteudo">
+                <div class="inicio-texto">
+                    <h1>Bem-vindo(a) ao meu consultório de Fonoaudiologia</h1>
+                    <p>
+                        Ofereço avaliação, diagnóstico e terapia fonoaudiológica personalizada para
+                        crianças, adolescentes e adultos. Meu objetivo é ajudar você a alcançar
+                        seu máximo potencial de comunicação.
+                    </p>
+                    <a href="#contato" class="botao-agendar">Agendar Consulta</a>
+                </div>
+                <div class="inicio-imagem">
+                    <img src="img/foto-profissional.jpg" alt="Fonoaudióloga" />
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <div class="sobre-conteudo">
+                <div class="sobre-texto">
+                    <h2>Sobre Mim</h2>
+                    <p>
+                        Sou [Nome da Fonoaudióloga], fonoaudióloga com [Número] anos de experiência...
+                        [Conteúdo sobre formação, experiência, filosofia de trabalho].
+                    </p>
+                    <h3>Formação</h3>
+                    <ul>
+                        <li>Graduação em Fonoaudiologia pela [Universidade]</li>
+                        <li>Especialização em [Área de Especialização]</li>
+                        <li>[Outras formações relevantes]</li>
+                    </ul>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="img/foto-perfil.jpg" alt="[Nome da Fonoaudióloga]" />
+                </div>
+            </div>
+        </section>
+
+        <section class="serviços" id="serviços">
+            <div class="serviços-conteudo">
+                <h2>Serviços</h2>
+                <div class="serviços-lista">
+                    <div class="serviço-item">
+                        <h3>Avaliação Fonoaudiológica</h3>
+                        <p>
+                            Realizo avaliação completa para identificar dificuldades de fala,
+                            linguagem, audição, voz e deglutição.
+                        </p>
+                    </div>
+                    <div class="serviço-item">
+                        <h3>Terapia de Linguagem Infantil</h3>
+                        <p>
+                            Tratamento para crianças com atraso de linguagem, dificuldades de
+                            aprendizagem e outros distúrbios da comunicação.
+                        </p>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <div class="contato-conteudo">
+                <h2>Contato</h2>
+                <div class="contato-informações">
+                    <p>Agende sua consulta ou tire suas dúvidas:</p>
+                    <ul>
+                        <li>Telefone: [Número de Telefone]</li>
+                        <li>E-mail: [Endereço de E-mail]</li>
+                        <li>Endereço: [Endereço do Consultório]</li>
+                    </ul>
+                </div>
+                <form class="contato-formulario">
+                    <input type="text" placeholder="Seu Nome" />
+                    <input type="email" placeholder="Seu E-mail" />
+                    <textarea placeholder="Sua Mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <aside>
-        <p>ola section</p>
-        <!-- conteúdo mantido -->
-    </aside>
-
     <footer>
-        Desenvolvido por Leonardo Barbosa - 2024 © Todos os direitos reservados.
+        <p>
+            &copy; 2024 [Nome da Fonoaudióloga]. Todos os direitos reservados.
+        </p>
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>
