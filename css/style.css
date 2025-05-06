@@ -281,7 +281,7 @@
         color: #fff;
         border: none;
         border-radius: 5px;
-        font-size: 1.1rem;
+        font-size: 1rem;
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
@@ -301,12 +301,12 @@
 
     #aviso {
         color: darkred;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         padding: 5px;
     }
     .aviso {
         color: darkred;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         padding: 5px;
     }
 
