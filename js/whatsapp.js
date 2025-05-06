@@ -9,10 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const telefone = document.getElementById("telefone").value;
       const data = document.getElementById("data").value;
       const mensagem = document.getElementById("mensagem").value;
+      const hora = document.getElementById("horario").value;
   
-      const texto = `Olá, eu gostaria de agendar um horário para esse dia ${data} ` +
-                    `Nome: ${nome}  ` +
-                    `E-mail: ${email}  ` +
+      const texto = `Olá meu nome é ${nome}` + 
+      ` as ${hora}` + `, e gostaria de verificiar a disponibilidade para uma avaliação na seguinte data ${data}` +
+                    `Segue minhas formas de contato E-mail: ${email}  ` +
                     `Telefone: ${telefone}  ` +
                     `Mensagem: ${mensagem}  `;
   
