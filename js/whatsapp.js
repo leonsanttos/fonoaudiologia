@@ -7,9 +7,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const nome = document.getElementById("nome").value;
     const email = document.getElementById("email").value;
     const telefone = document.getElementById("telefone").value;
-    const data = document.getElementById("data").value;
+    let data = document.getElementById("data").value;
     const mensagem = document.getElementById("mensagem").value.trim();
     const hora = document.getElementById("horario").value;
+
+    // Obtém a data de hoje em formato YYYY-MM-DD
+    const hoje = new Date();
+    const ano = hoje.getFullYear();
+    const mes = String(hoje.getMonth() + 1).padStart(2, '0');
+    const dia = String(hoje.getDate()).padStart(2, '0');
+    const hojeFormatado = `${ano}-${mes}-${dia}`;
+
+    // Se a data escolhida for anterior a hoje, substitui pela data de hoje
+    if (data < hojeFormatado) {
+      data = hojeFormatado;
+    }
 
     // Converte data de YYYY-MM-DD para DD/MM/YYYY
     const partesData = data.split("-");
