@@ -11,8 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const mensagem = document.getElementById("mensagem").value.trim();
     const hora = document.getElementById("horario").value;
 
+    // Converte data de YYYY-MM-DD para DD/MM/YYYY
+    const partesData = data.split("-");
+    const dataFormatada = `${partesData[2]}/${partesData[1]}/${partesData[0]}`;
+
     let texto = `Olá, meu nome é ${nome}` +
-      `, e eu gostaria de verificar a disponibilidade para uma avaliação na seguinte data ${data}` +
+      `, e eu gostaria de verificar a disponibilidade para uma avaliação na seguinte data ${dataFormatada}` +
       ` às ${hora}h.` +
       ` Segue minhas formas de contato: E-mail: ${email}, Telefone: ${telefone}.`;
 

@@ -260,16 +260,34 @@
         gap: 9px;
         max-width: 400px;
         margin: 0 auto;
+        
     }
 
+    
+    select{
+      appearance: none; /* Remove a aparência nativa do select no Chrome */
+      -webkit-appearance: none; /* Safari */
+      -moz-appearance: none; /* Firefox */
+      background-color: #fff;
+    }
+    
+    /* Opcional: adicionar um ícone de seta personalizado para o select */
+    select {
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%22292%22%20height%3D%22192%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M287%2069l-14-14c-4-4-10-4-14%200L146%20168%2033%2055c-4-4-10-4-14%200L5%2069c-4%204-4%2010%200%2014l133%20133c4%204%2010%204%2014%200L287%2083c4-4%204-10%200-14z%22%20fill%3D%22%23333%22/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 12px;
+    }
     .contato-formulario input,
-    .contato-formulario textarea {
+    .contato-formulario textarea,
+    .contato-formulario select{
         padding: 10px;
         font-size: 1rem;
         border: 1px solid #ccc;
         border-radius: 5px;
+        text-align: center;
     }
-
+   
     .contato-formulario textarea {
         resize: vertical;
         min-height: 150px;
