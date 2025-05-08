@@ -1,377 +1,390 @@
 *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-        margin: 0;
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+header img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+#abrirMenu,
+#fecharMenu {
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Seção Início */
+.inicio {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+}
+
+.inicio-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inicio-texto {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.inicio-texto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.inicio-texto p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.botao-agendar {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.botao-agendar:hover {
+    background-color: #0056b3;
+}
+
+.inicio-imagem {
+    width: 40%;
+}
+
+.inicio-imagem img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Sobre */
+.sobre {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.sobre-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre-texto {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.sobre-texto h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sobre-texto p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.sobre-texto h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.sobre-texto ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.sobre-imagem {
+    width: 40%;
+}
+
+.sobre-imagem img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Serviços */
+.serviços {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+}
+
+.serviços-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.serviços h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.serviços-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.serviço-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.serviço-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.serviço-item p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Seção Contato */
+.contato {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.contato-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contato-informações {
+    margin-bottom: 30px;
+}
+
+.contato-informações p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.contato-informações ul {
+    margin-top: 20px;
+}
+
+.contato-informações li {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.contato-formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 9px;
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+
+select {
+    appearance: none;
+    /* Remove a aparência nativa do select no Chrome */
+    -webkit-appearance: none;
+    /* Safari */
+    -moz-appearance: none;
+    /* Firefox */
+    background-color: #fff;
+}
+
+/* Opcional: adicionar um ícone de seta personalizado para o select */
+select {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%22292%22%20height%3D%22192%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M287%2069l-14-14c-4-4-10-4-14%200L146%20168%2033%2055c-4-4-10-4-14%200L5%2069c-4%204-4%2010%200%2014l133%20133c4%204%2010%204%2014%200L287%2083c4-4%204-10%200-14z%22%20fill%3D%22%23333%22/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+.contato-formulario input,
+.contato-formulario textarea,
+.contato-formulario select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contato-formulario textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contato-formulario button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato-formulario button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#aviso {
+    color: darkred;
+    font-size: 0.9rem;
+    padding: 5px;
+}
+
+.aviso {
+    color: darkred;
+    font-size: 0.9rem;
+    padding: 5px;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .inicio-conteudo,
+    .sobre-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio-texto,
+    .sobre-texto,
+    .inicio-imagem,
+    .sobre-imagem {
+        width: 100%;
         padding: 0;
-    }
-
-    body {
-        font-family: 'Inter', sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background-color: #f8f8f8;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    ul {
-        list-style: none;
-    }
-
-    /* Header */
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    header img {
-        height: 50px;
-    }
-
-    nav {
-        display: flex;
-        align-items: center;
-    }
-
-    nav a {
-        padding: 10px 15px;
-        font-size: 16px;
-        font-weight: 500;
-        color: #333;
-        transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-        color: #007bff;
-    }
-
-    #abrirMenu,
-    #fecharMenu {
-        border: none;
-        background: none;
-        font-size: 1.5rem;
-        cursor: pointer;
-        display: none;
-    }
-
-    /* Seção Início */
-    .inicio {
-        background-color: #f8f8f8;
-        padding: 50px 20px;
-    }
-
-    .inicio-conteudo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .inicio-texto {
-        width: 50%;
-        padding-right: 20px;
+        margin-bottom: 30px;
     }
 
     .inicio-texto h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        color: #333;
+        font-size: 2rem;
     }
 
-    .inicio-texto p {
-        font-size: 1.1rem;
-        color: #666;
-        margin-bottom: 30px;
-    }
-
-    .botao-agendar {
-        display: inline-block;
-        padding: 12px 24px;
-        background-color: #007bff;
-        color: #fff;
-        border-radius: 5px;
-        font-size: 1.1rem;
-        transition: background-color 0.3s ease;
-    }
-
-    .botao-agendar:hover {
-        background-color: #0056b3;
-    }
-
-    .inicio-imagem {
-        width: 40%;
-    }
-
-    .inicio-imagem img {
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Seção Sobre */
-    .sobre {
-        background-color: #fff;
-        padding: 50px 20px;
-    }
-
-    .sobre-conteudo {
-        display: flex;
-        justify-content: space-between;
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        z-index: 999;
+        flex-direction: column;
         align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
+        justify-content: center;
+        transition: right 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
     }
 
-    .sobre-texto {
-        width: 50%;
-        padding-right: 20px;
+    nav.menu-aberto {
+        right: 0;
+        opacity: 1;
     }
 
-    .sobre-texto h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-        color: #333;
+    nav a {
+        font-size: 1.2rem;
+        padding: 15px;
     }
-
-    .sobre-texto p {
-        font-size: 1.1rem;
-        color: #666;
-        margin-bottom: 30px;
-    }
-
-    .sobre-texto h3 {
-        font-size: 1.5rem;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        color: #444;
-    }
-
-    .sobre-texto ul {
-        list-style: disc;
-        margin-left: 20px;
-    }
-
-    .sobre-imagem {
-        width: 40%;
-    }
-
-    .sobre-imagem img {
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Seção Serviços */
-    .serviços {
-        background-color: #f8f8f8;
-        padding: 50px 20px;
-    }
-
-    .serviços-conteudo {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .serviços h2 {
-        font-size: 2rem;
-        margin-bottom: 30px;
-        color: #333;
-        text-align: center;
-    }
-
-    .serviços-lista {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-    }
-
-    .serviço-item {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .serviço-item h3 {
-        font-size: 1.5rem;
-        margin-bottom: 15px;
-        color: #444;
-    }
-
-    .serviço-item p {
-        font-size: 1.1rem;
-        color: #666;
-    }
-
-    /* Seção Contato */
-    .contato {
-        background-color: #fff;
-        padding: 50px 20px;
-    }
-
-    .contato-conteudo {
-        max-width: 1200px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .contato h2 {
-        font-size: 2rem;
-        margin-bottom: 15px;
-        color: #333;
-    }
-
-    .contato-informações {
-        margin-bottom: 30px;
-    }
-
-    .contato-informações p {
-        font-size: 1.1rem;
-        color: #666;
-        margin-bottom: 15px;
-    }
-
-    .contato-informações ul {
-        margin-top: 20px;
-    }
-
-    .contato-informações li {
-        font-size: 1.1rem;
-        color: #444;
-        margin-bottom: 10px;
-    }
-
-    .contato-formulario {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 9px;
-        max-width: 400px;
-        margin: 0 auto;
-        
-    }
-
-    
-    select{
-      appearance: none; /* Remove a aparência nativa do select no Chrome */
-      -webkit-appearance: none; /* Safari */
-      -moz-appearance: none; /* Firefox */
-      background-color: #fff;
-    }
-    
-    /* Opcional: adicionar um ícone de seta personalizado para o select */
-    select {
-      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%22292%22%20height%3D%22192%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M287%2069l-14-14c-4-4-10-4-14%200L146%20168%2033%2055c-4-4-10-4-14%200L5%2069c-4%204-4%2010%200%2014l133%20133c4%204%2010%204%2014%200L287%2083c4-4%204-10%200-14z%22%20fill%3D%22%23333%22/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 10px center;
-      background-size: 12px;
-    }
-    .contato-formulario input,
-    .contato-formulario textarea,
-    .contato-formulario select{
-        padding: 10px;
-        font-size: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        text-align: center;
-    }
-   
-    .contato-formulario textarea {
-        resize: vertical;
-        min-height: 150px;
-    }
-
-    .contato-formulario button {
-        padding: 12px 24px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .contato-formulario button:hover {
-        background-color: #0056b3;
-    }
-
-    /* Footer */
-    footer {
-        background-color: #f8f8f8;
-        text-align: center;
-        padding: 20px;
-        font-size: 0.9rem;
-        color: #666;
-    }
-
-    #aviso {
-        color: darkred;
-        font-size: 0.9rem;
-        padding: 5px;
-    }
-    .aviso {
-        color: darkred;
-        font-size: 0.9rem;
-        padding: 5px;
-    }
-
-
-    /* Responsividade */
-    @media (max-width: 768px) {
-        .inicio-conteudo,
-        .sobre-conteudo {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .inicio-texto,
-        .sobre-texto,
-        .inicio-imagem,
-        .sobre-imagem {
-            width: 100%;
-            padding: 0;
-            margin-bottom: 30px;
-        }
-
-        .inicio-texto h1 {
-            font-size: 2rem;
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.95);
-            z-index: 999;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: right 0.3s ease, opacity 0.3s ease;
-            opacity: 0;
-        }
-
-        nav.menu-aberto {
-            right: 0;
-            opacity: 1;
-        }
-
-        nav a {
-            font-size: 1.2rem;
-            padding: 15px;
-        }
-    }
+}

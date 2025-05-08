@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Se a data escolhida for anterior a hoje, substitui pela data de hoje
     if (data < hojeFormatado) {
-      data = hojeFormatado;
+      //data = hojeFormatado;
+      alert("voce selecionou essa data! "+ data)
     }
 
     // Converte data de YYYY-MM-DD para DD/MM/YYYY
