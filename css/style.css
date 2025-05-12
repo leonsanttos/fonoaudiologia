@@ -6,11 +6,25 @@
     padding: 0;
 }
 
+:root {
+    --alturaHeader: 70px;
+  }
+  
+  .inicio,
+  .sobre,
+  .serviços,
+  .contato {
+    scroll-margin-top: var(--alturaHeader);
+  }
+  
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f8f8f8;
+    padding-top: var(--alturaHeader);
+
+    
 }
 
 img {
@@ -36,9 +50,6 @@ header {
     padding: 10px 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-
-
     position: fixed;
     top: 0;
     z-index: 1000;
