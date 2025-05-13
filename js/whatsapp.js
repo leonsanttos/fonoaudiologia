@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
       texto += ` Outras informações: ${mensagem}`;
     }
 
-    const numeroWhatsApp = "5585997319638; // ✅ Substitua pelo seu número com DDI e DDD
+    const numeroWhatsApp = "5585997319638"; // ✅ Substitua pelo seu número com DDI e DDD
     const link = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
 
     window.open(link, "_blank");
