@@ -47,12 +47,19 @@
                 <div class="sobre-texto">
                     <h2>Sobre Mim</h2>
                     <p>
-                        Sou a Renata Vieira, fonoaudióloga com mais de 5 anos de experiência dedicada à promoção da comunicação e da qualidade de vida em todas as fases da vida — da infância à maturidade.
+                        Sou a Renata Vieira, fonoaudióloga com mais de 5 anos de experiência dedicada à promoção da
+                        comunicação e da qualidade de vida em todas as fases da vida — da infância à maturidade.
 
-                        Atuo na avaliação, diagnóstico e intervenção de distúrbios da fala, linguagem, voz e motricidade orofacial, sempre com uma abordagem humanizada e personalizada. Acredito na escuta ativa, na empatia e no compromisso com cada etapa do processo terapêutico.
-                        
-                        Meu trabalho é pautado em técnicas baseadas em evidências científicas, aliadas às necessidades individuais de cada paciente. Atendo em consultório particular e também em parceria com instituições de saúde e escolas, com foco no desenvolvimento e bem-estar de quem confia em meu cuidado.</p>
-                   
+                        Atuo na avaliação, diagnóstico e intervenção de distúrbios da fala, linguagem, voz e motricidade
+                        orofacial, sempre com uma abordagem humanizada e personalizada. Acredito na escuta ativa, na
+                        empatia e no compromisso com cada etapa do processo terapêutico.
+
+                        Meu trabalho é pautado em técnicas baseadas em evidências científicas, aliadas às necessidades
+                        individuais de cada paciente. Atendo em consultório particular e também em parceria com
+                        instituições de saúde e escolas, com foco no desenvolvimento e bem-estar de quem confia em meu
+                        cuidado.
+                    </p>
+
                 </div>
                 <div class="sobre-imagem">
                     <img src="img/img1.jpg" alt="Renata" />
@@ -82,58 +89,66 @@
             </div>
         </section>
 
-      
-	  
-    <section class="contato" id="contato">
-        <div class="contato-conteudo">
-          <!-- ✅ FORM CORRETO: apenas um form, com ID e onsubmit -->
-          <form class="contato-formulario" id="form-agendamento">
-            <h2>Solicitar Agendamento</h2>
-      
-            <label for="nome">Nome completo:</label>
-            <input type="text" id="nome" name="nome" required>
-      
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-      
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required>
-      
-            <label for="data">Data da consulta:</label>
-            <input type="date" id="data" name="data" required>
 
-            <label for="hora">Horario:</label>
-            <!-- <input type="time" id="horario" name="horario" min="08:00" max="18:00" step="60" required> -->
-            <select type="time" id="horario" name="horario">
-                <option value="08:00">08:00 as 09:00</option>
-                <option value="09:00">09:00 as 10:00</option>
-                <option value="10:00">10:00 as 11:00</option>
-                <option value="11:00">11:00 as 12:00</option>
-                <option value="13:00">13:00 as 14:00</option>
-                <option value="14:00">14:00 as 15:00</option>
-                <option value="15:00">15:00 as 16:00</option>
-                <option value="16:00">16:00 as 17:00</option>
-                <option value="17:00">17:00 as 18:00</option>
-              </select>
 
-            <label for="mensagem">Existem outras datas de interesse ?</label>
-            <textarea id="mensagem" name="mensagem" rows="2"></textarea>
-            
-            <label id="aviso" class="aviso">*Confirmaremos a disponibilidade e o agendamento através do WhatsApp</label>
-            <button type="submit">Agendar</button>
-          </form>
-        </div>
-      </section>
+        <section class="contato" id="contato">
+            <div class="contato-conteudo">
 
-  </main>
+                <form class="contato-formulario" id="form-agendamento">
+                    <h2>Solicitar Agendamento</h2>
 
-  <footer>
-    <p>
-        &copy; 2024 Leonardo Barbosa. Todos os direitos reservados.
-    </p>
-</footer>
-<script src="js/whatsapp.js"></script>
-<script src="js/script.js"></script>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+
+                    <label for="data">Data da consulta:</label>
+                    <input type="date" id="data" name="data" required>
+
+                    <label for="hora">Horario:</label>
+                    <!-- <input type="time" id="horario" name="horario" min="08:00" max="18:00" step="60" required> -->
+                    <select type="time" id="horario" name="horario">
+                        <option value="08:00">08:00 as 09:00</option>
+                        <option value="09:00">09:00 as 10:00</option>
+                        <option value="10:00">10:00 as 11:00</option>
+                        <option value="11:00">11:00 as 12:00</option>
+                        <option value="13:00">13:00 as 14:00</option>
+                        <option value="14:00">14:00 as 15:00</option>
+                        <option value="15:00">15:00 as 16:00</option>
+                        <option value="16:00">16:00 as 17:00</option>
+                        <option value="17:00">17:00 as 18:00</option>
+                    </select>
+
+                    <label for="mensagem">Existem outras datas de interesse ?</label>
+                    <textarea id="mensagem" name="mensagem" rows="2"></textarea>
+
+                    <label id="aviso" class="aviso">*Confirmaremos a disponibilidade e o agendamento através do
+                        WhatsApp</label>
+                    <button type="submit">Agendar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="ano">ano</span> Leonardo Barbosa. Todos os direitos reservados.
+        </p>
+    </footer>
+    <script>
+        // Pega o ano atual
+        const anoAtual = new Date().getFullYear();
+
+        // Coloca o ano no elemento com id="ano"
+        document.getElementById("ano").textContent = anoAtual;
+    </script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
