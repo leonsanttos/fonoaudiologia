@@ -24,3 +24,6 @@ fecharMenu.addEventListener('click', () =>{
     }, 200)
     
 })
+
+const anoAtual = new Date().getFullYear();
+document.getElementById("ano").textContent = anoAtual;
